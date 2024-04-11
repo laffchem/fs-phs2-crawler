@@ -1,4 +1,5 @@
 import { createTimeStamp, mailResults } from './utils.js';
+import moment from 'moment';
 // import FSCrawler from './crawler.js';
 // import moment from 'moment';
 
@@ -18,8 +19,20 @@ console.log(`${createTimeStamp()}`);
 */
 
 // Email Test
-const file = './logs/404Check-20240409.log';
+// const file = './logs/404Check-20240409.log';
 
-mailResults(file);
+// mailResults(file);
 
 // This worked.
+
+// Testing runtime calculation.
+// const startTime = moment();
+
+// // Set a timeout to emulate the end time after 1 minute (60000 milliseconds)
+// const endTime = setTimeout(() => {
+//     // Record the end time when the timeout expires
+//     const end = moment();
+//     const totalRuntimeMS = end.diff(startTime); // Calculate the total runtime in milliseconds
+//     const totalRuntimeHours = moment.duration(totalRuntimeMS).asHours(); // Convert to hours
+//     console.log(totalRuntimeHours);
+// }, 60000);
