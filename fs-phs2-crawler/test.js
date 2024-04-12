@@ -1,5 +1,6 @@
 import { createTimeStamp, mailResults } from './utils.js';
 import moment from 'moment';
+import { calculateRunTime } from './utils.js';
 // import FSCrawler from './crawler.js';
 // import moment from 'moment';
 
@@ -36,3 +37,19 @@ console.log(`${createTimeStamp()}`);
 //     const totalRuntimeHours = moment.duration(totalRuntimeMS).asHours(); // Convert to hours
 //     console.log(totalRuntimeHours);
 // }, 60000);
+
+// const startTime = moment('2022-01-01T12:00:00Z');
+// const endTime = moment('2022-01-02T01:17:00Z');
+// function calculateRunTimeTest(startTime, endTime) {
+//     const totalRunTimeMS = endTime.diff(startTime);
+//     const duration = moment.duration(totalRunTimeMS);
+
+//     const hours = Math.floor(duration.asHours());
+//     const minutes = duration.minutes();
+
+//     const formattedRuntime = `${hours}:${minutes.toString().padStart(2, '0')}`;
+//     console.log(formattedRuntime);
+//     return formattedRuntime;
+// }
+
+// calculateRunTimeTest(startTime, endTime);

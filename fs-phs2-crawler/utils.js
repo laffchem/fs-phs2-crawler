@@ -13,8 +13,14 @@ export function createTimeStamp() {
 export function calculateRunTime(startTime) {
     const endTime = moment();
     const totalRunTimeMS = endTime.diff(startTime);
-    const totalRunTimeHrs = moment.duration(totalRunTimeMS).asHours();
-    return totalRunTimeHrs;
+    const duration = moment.duration(totalRunTimeMS);
+
+    const hours = Math.floor(duration.asHours());
+    const minutes = duration.minutes();
+
+    const formattedRuntime = `${hours}:${minutes.toString().padStart(2, '0')}`;
+
+    return formattedRuntime;
 }
 
 export const transporter = nodemailer.createTransport({
