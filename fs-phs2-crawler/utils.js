@@ -39,10 +39,9 @@ export async function mailResults(attachmentName, runTime) {
                 'appsupport@flexshopper.com',
                 'jorge.gaitan@flexshopper.com',
                 'peter.longchamp@flexshopper.com',
-            ],
+            ], //'john.laffey@flexshopper.com',
             subject: 'Flexshopper Marketplace 404 Sweep',
-            text: `Please find the flexshopper marketplace 404 log attached to this email.
-						Total Runtime: ${runTime} hours`,
+            text: `Please find the flexshopper marketplace 404 log attached to this email.\nTotal Runtime: ${runTime}.`,
             attachments: [
                 {
                     path: attachmentName,

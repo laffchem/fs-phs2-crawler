@@ -19,11 +19,6 @@ findrfkNext();
 console.log(`${createTimeStamp()}`);
 */
 
-// Email Test
-// const file = './logs/404Check-20240409.log';
-
-// mailResults(file);
-
 // This worked.
 
 // Testing runtime calculation.
@@ -52,4 +47,8 @@ console.log(`${createTimeStamp()}`);
 //     return formattedRuntime;
 // }
 
-// calculateRunTimeTest(startTime, endTime);
+// const runtime = calculateRunTimeTest(startTime, endTime);
+// // Email Test
+// const file = './logs/404Check-20240411.log';
+
+// mailResults(file, runtime);
